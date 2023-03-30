@@ -1,0 +1,99 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section_wrap {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 100vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    margin-top: 24px;
+    box-shadow: rgb(248, 248, 58) 0px 0px 20px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 700px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 15px;
+    text-decoration: none;
+    background-color: rgb(80, 80, 19);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+.h1 {
+    font-size: 35px;
+    padding: 30px;
+}
+
+.text {
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.form-input {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+[type="submit"] {
+    background-color: rgb(80, 80, 19);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    align-items: center;
+}
+
+[type="text"] {
+    color: white;
+    padding: 10px;
+    background-color: black;
+    border-color: yellow;
+    border-radius: 10px;
+}
+
+[type="password"] {
+    color: white;
+    padding: 10px;
+    background-color: black;
+    border-color: yellow;
+    border-radius: 10px;
+}
+

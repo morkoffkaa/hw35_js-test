@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../style/reset.css" />
+  <link rel="stylesheet" href="../style/search.css" />
+</head>
+
+<body>
+  <section class="section_wrap">
+    <div class="container">
+      <h1 class="h1">Реєстрація</h1>
+      <form action="https://form.in.ua/echo">
+        <div class="form-input">
+          <label for="first-name">Введіть ім`я </label>
+          <input type="text" id="first-name" name="first-name" placeholder="Joe" />
+          <label for="last-name">Введіть прізвище </label>
+          <input type="text" id="last-name" name="last-name" placeholder="Black" />
+          <label for="birth-year">Введіть рік народження </label>
+          <input type="text" id="birth-year" name="birth-year" placeholder="yyyy" />
+        </div>
+        <div class="form_input_radio">
+          <p class="text">Ваша стать</p>
+          <input type="radio" name="sex" value="man" id="man" />
+          <label class="label" for="mn">Чоловіча</label>
+          <input type="radio" name="sex" value="woman" id="woman" />
+          <label class="label" for="wm">Жіноча</label>
+        </div>
+        <div class="form-input">
+          <label for="selected_type">Ваше місто</label>
+          <select class="select" name="city" id="city">
+            <option value="0" selected="selected">
+              Оберіть ваше місто
+            </option>
+            <option value="kyiv">Київ</option>
+            <option value="kharkiv">Харків</option>
+            <option value="odesa">Одеса</option>
+            <option value="lviv">Львів</option>
+            <option value="dnipro">Дніпро</option>
+          </select>
+        </div>
+        <div class="form-input">
+          <label for="address">Введіть вашу адресу:</label>
+          <input type="text" id="address" name="address" placeholder="Шевченка, 33-б" />
+        </div>
+        <div class="form_input_multiple">
+          <p class="text">Мови, якими ви володієте:</p>
+          <label for="language_ukr">Українська</label>
+          <input id="language_ukr" type="checkbox" name="condition_type" value="ukrainian"
+            non-checked />
+          <label for="language_eng">Англійська</label>
+          <input id="language_eng" type="checkbox" name="condition_type" value="english"
+            non-checked />
+          <label for="language_de">Німецька</label>
+          <input id="language_de" type="checkbox" name="condition_type" value="deutsch"
+            non-checked />
+          <label for="language_fr">Французьська</label>
+          <input id="language_fr" type="checkbox" name="condition_type" value="french"
+            non-checked />
+        </div>
+      </form>
+      <div class="btn-wrap">
+        <button type="button" class="btn button" onclick="generateTable()">Зберегти</button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
