@@ -14,7 +14,7 @@
   <section class="section_wrap">
     <div class="container">
       <h1 class="h1">Реєстрація</h1>
-      <form action="..//pages/new.html">
+      <form class="login_form">
         <div class="form-input">
           <label for="first-name">Введіть ім`я </label>
           <input type="text" id="first-name" name="first-name" placeholder="Joe" />
@@ -59,15 +59,16 @@
           <input id="language_fr" type="checkbox" name="language" value="french" non-checked />
         </div>
         <div class="btn-wrap">
-          <button id=saveBtn type="submit" class="btn button" onclick="generateTable()">Зберегти</button>
+          <button id=saveBtn type="submit" class="btn button">Зберегти</button>
       </form>
       
       </div>
     </div>
+    <section class="table_section">
+    <div id="table-container"></div>
   </section>
-  
+  </section>
   <script src="./main.js"></script>
 </body>
+</html> 
 
-
-</html>

@@ -97,3 +97,11 @@ body {
     border-radius: 10px;
 }
 
+.tableContainer, th, td {
+    border: 1px solid yellow;
+}
+
+.table_section {
+    background-color: black;
+}
+
