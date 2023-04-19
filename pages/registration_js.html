@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="../style/reset.css" />
-  <link rel="stylesheet" href="../style/search.css" />
+  <link rel="stylesheet" href="..//style/style.css" />
+  <link rel="stylesheet" href="..//style/search.css"/>
 </head>
 
 <body>
@@ -21,14 +22,14 @@
           <label for="last-name">Введіть прізвище </label>
           <input type="text" id="last-name" name="last-name" placeholder="Black" />
           <label for="birth-year">Введіть рік народження </label>
-          <input type="text" id="birth-year" name="birth-year" placeholder="yyyy" />
+          <input type="number" min="1950" max="2023" id="birth-year" name="birth-year" placeholder="yyyy" />
         </div>
         <div class="form_input_radio">
           <p class="text">Ваша стать</p>
-          <input type="radio" name="sex" value="man" id="man" />
           <label class="label" for="man">Чоловіча</label>
-          <input type="radio" name="sex" value="woman" id="woman" />
+          <input type="radio" name="sex" value="Чоловіча" id="man" checked />
           <label class="label" for="woman">Жіноча</label>
+          <input type="radio" name="sex" value="Жіноча" id="woman" />
         </div>
         <div class="form-input">
           <label for="selected_type">Ваше місто</label>
@@ -36,11 +37,11 @@
             <option value="0" selected="selected">
               Оберіть ваше місто
             </option>
-            <option value="kyiv">Київ</option>
-            <option value="kharkiv">Харків</option>
-            <option value="odesa">Одеса</option>
-            <option value="lviv">Львів</option>
-            <option value="dnipro">Дніпро</option>
+            <option value="Київ">Київ</option>
+            <option value="Харків">Харків</option>
+            <option value="Одеса">Одеса</option>
+            <option value="Львів">Львів</option>
+            <option value="Дніпро">Дніпро</option>
           </select>
         </div>
         <div class="form-input">
@@ -50,13 +51,13 @@
         <div class="form_input_multiple">
           <p class="text">Мови, якими ви володієте:</p>
           <label for="language_ukr">Українська</label>
-          <input id="language_ukr" type="checkbox" name="language" value="ukrainian" unchecked />
+          <input id="language_ukr" type="checkbox" name="language" value="Українська" unchecked />
           <label for="language_eng">Англійська</label>
-          <input id="language_eng" type="checkbox" name="language" value="english" non-checked />
+          <input id="language_eng" type="checkbox" name="language" value="Англійська" non-checked />
           <label for="language_de">Німецька</label>
-          <input id="language_de" type="checkbox" name="language" value="deutsch" non-checked />
+          <input id="language_de" type="checkbox" name="language" value="Німецька" non-checked />
           <label for="language_fr">Французьська</label>
-          <input id="language_fr" type="checkbox" name="language" value="french" non-checked />
+          <input id="language_fr" type="checkbox" name="language" value="Французьська" non-checked />
         </div>
         <div class="btn-wrap">
           <button id=saveBtn type="submit" class="btn button">Зберегти</button>

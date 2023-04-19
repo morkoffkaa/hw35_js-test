@@ -9,6 +9,7 @@ document.querySelector(".login_form").addEventListener("submit", generateTable);
      const lastName = document.getElementById("last-name").value;
      const birthYear = document.getElementById("birth-year").value;
      const sex = document.querySelectorAll('input[name="sex"]:checked').value;
+    
      const city = document.getElementById("city").value;
      const address = document.getElementById("address").value;
 
@@ -27,6 +28,8 @@ document.querySelector(".login_form").addEventListener("submit", generateTable);
     
       const table = document.createElement("table");
 
+      table.setAttribute("id", "user-table");
+      
       table.innerHTML = "<tr><td>Ім'я:</td><td>" + firstName + "</td></tr>" +
         "<tr><td>Прізвище:</td><td>" + lastName + "</td></tr>" +
         "<tr><td>Дата народження:</td><td>" + birthYear + "</td></tr>" +
